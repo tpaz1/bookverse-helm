@@ -111,7 +111,7 @@ jobs:
           JFROG_CLI_BUILD_NAME: ${{ github.event.repository.name }}_${{ github.workflow }}_${{ github.job }}
           JFROG_CLI_BUILD_NUMBER: ${{ github.run_number }}-${{ github.run_attempt }}
         with:
-          version: latest
+          version: 2.86.0
           oidc-provider-name: bookverse-helm-github
           disable-job-summary: false
           disable-auto-build-publish: true

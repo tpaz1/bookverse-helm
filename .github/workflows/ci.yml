@@ -116,6 +116,7 @@ jobs:
         with:
           oidc-provider-name: bookverse-helm-github
           oidc-audience: ${{ vars.JFROG_URL }}
+          version: 2.86.0
         env:
           JF_URL: ${{ vars.JFROG_URL }}
           JF_PROJECT: ${{ vars.PROJECT_KEY }}
@@ -352,6 +353,7 @@ jobs:
         with:
           oidc-provider-name: bookverse-helm-github
           oidc-audience: ${{ vars.JFROG_URL }}
+          version: 2.86.0
         env:
           JF_URL: ${{ vars.JFROG_URL }}
           JF_PROJECT: ${{ vars.PROJECT_KEY }}
