@@ -111,7 +111,7 @@ jobs:
           echo "APPLICATION_KEY=bookverse-helm" >> $GITHUB_ENV
 
       - name: "[Setup] JFrog CLI"
-        uses: EyalDelarea/setup-jfrog-cli@swampUpAppTrust
+        uses: jfrog/setup-jfrog-cli@v4
         id: jfrog-cli-auth
         with:
           oidc-provider-name: bookverse-helm-github
@@ -347,7 +347,7 @@ jobs:
           path: bookverse-infra
 
       - name: "[Setup] JFrog CLI"
-        uses: EyalDelarea/setup-jfrog-cli@swampUpAppTrust
+        uses: jfrog/setup-jfrog-cli@v4
         id: jfrog-cli-auth
         with:
           oidc-provider-name: bookverse-helm-github
